@@ -1,0 +1,238 @@
+% DO NOT COMPILE THIS FILE DIRECTLY!
+% This is included by the other .tex files.
+
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+
+\begin{frame}[t]{Temática}
+La realización de auditorías tanto de sistemas como aplicaciones es una conducta regular en áreas informáticas o de desarrollo, de las cuales se desprenden secciones completamente dedicadas al tema, incluso haciendo uso de recompensas para individuos que encuentren e informen fallas en los sistemas pertinente. 
+
+\begin{itemize}
+\item Encapsulamiento de la Aplicación.
+\item Seguridad.
+\item Comprensión de Errores en el Sistema.
+\end{itemize}
+
+\bigskip
+\textbf{Problemática}: Escoger una aplicación popular a auditar, realizando una búsqueda de posibles problemas y licencias asociadas a la misma app.
+\bigskip
+
+\end{frame}
+
+\begin{frame}[t,fragile]{Qu\'e es Instagram?}
+\begin{wrapfigure}{l}{0.43\textwidth} 
+\vspace{2pt}
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{ig}
+    \label{fig:databaseUserTable}
+  \end{center}
+  \vspace{2pt}
+\end{wrapfigure} 
+
+Red Social que permite compartir imágenes y vídeos, aplicando efectos fotográficos del tipo : filtros, marcos, retro, vintage, entre otros, los cuales pueden ser vistos tanto en la aplicación como en otros entornos (Facebook, Twitter, Flickr, etc). 
+Entre sus plataformas disponibles se encuentra:
+\begin{center}
+    \begin{itemize}
+        \item Sistema Operativo Android.
+        \item Sistema Operativo IOs.
+        \item Escritorio
+    \end{itemize}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[t,fragile]{Equipo de la Empresa}
+
+
+\textbf{Equipo de la Empresa}
+\bigskip
+
+\begin{itemize}
+    \item \textbf{Kevin Systrom (CEO, co-founder)} :  Consejero delegado o Director ejecutivo de Instagram, siendo el responsable de la visión y estrategia de la compañoa acorde a las operaciones diaria de la misma.
+    \item \textbf{Mike Krieger (CTO, co-founder)} : Responsable técnico del desarrollo como la cabeza de ingeniería en Instagram, encargado de la construcción y aporte creativo del producto.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[t,fragile]{Desarrolladores Actuales}
+\bigskip
+\textbf{Desarrolladores}
+\bigskip
+
+\begin{wrapfigure}{r}{0.3\textwidth} 
+\vspace{1pt}
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{fbig.png}
+    \label{fig:databaseUserTable}
+  \end{center}
+  \vspace{2pt}
+\end{wrapfigure}
+
+Actualmente los desarrolladores designados a la empresa son Facebook,  dando paso a funcionalidades similares, como lo son direct (inbox) y etiquetados de usuarios en las fotos compartidas (entre las destacadas). De ésta manera se logra la conectividad interna entre ésta (IG) y el resto de aplicaciones.
+
+\end{frame}
+
+
+\begin{frame}[t,fragile]{Licencias y Softwares Asociados}
+Los software y licencias asociadas a la aplicación son los siguientes:
+AFNetworking, Appirater, Boost, CocoaLumberjack, Cocoawithlove, Flick-OAuth-iOS
+    ,Google Breakpad entre muchos otros
+\bigskip
+
+
+DE los cuales se hace una subdivisión por:
+
+\begin{itemize}
+    \item Creación de Servicios (Android y iOS)
+    \item Conexión a Servidores (Android y iOS)
+    \item Aplicaciones Propias de dispositivos (Android y iOS)
+\end{itemize}
+
+
+
+\end{frame}
+
+
+\begin{frame}[t,fragile]{Propuesta de Problemas}
+Además de las herramientas utilizadas se consideran realizar las siguientes pruebas:
+
+\begin{itemize}
+    \item Validar la Seguridad de la Aplicación en Base a sus Herramientas/Software.
+    \item Analizar el React Native de Instagram para Andriod y iOS.
+    \item Realizar Pruebas Asociadas a la conexión Servidor Aplicación. haciendo uso de:
+    \begin{itemize}
+        \item Man-in-the-middle.
+        \item DDoS.
+    \end{itemize}
+    \item Descompilar la Aplicación (si es posible).
+    \item  Analizar ataque por medio de Restauración de Contraseña haciendo uso de Proxy Web. (ataque 2016).
+    \item Posible Descompilación del Código.
+    
+    
+\end{itemize}
+
+
+
+\end{frame}
+
+
+% DO NOT COMPILE THIS FILE DIRECTLY!
+% This is included by the other .tex files.
+
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+
+\begin{frame}[t]{Temática}
+La realización de auditorías tanto de sistemas como aplicaciones es una conducta regular en áreas informáticas o de desarrollo, de las cuales se desprenden secciones completamente dedicadas al tema, incluso haciendo uso de recompensas para individuos que encuentren e informen fallas en los sistemas pertinente. 
+
+\begin{itemize}
+\item Encapsulamiento de la Aplicación.
+\item Seguridad.
+\item Comprensión de Errores en el Sistema.
+\end{itemize}
+
+\bigskip
+\textbf{Problemática}: Escoger una aplicación popular a auditar, realizando una búsqueda de posibles problemas y licencias asociadas a la misma app.
+\bigskip
+
+\end{frame}
+
+\begin{frame}[t,fragile]{Qu\'e es Instagram?}
+\begin{wrapfigure}{l}{0.43\textwidth} 
+\vspace{2pt}
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{ig}
+    \label{fig:databaseUserTable}
+  \end{center}
+  \vspace{2pt}
+\end{wrapfigure} 
+
+Red Social que permite compartir imágenes y vídeos, aplicando efectos fotográficos del tipo : filtros, marcos, retro, vintage, entre otros, los cuales pueden ser vistos tanto en la aplicación como en otros entornos (Facebook, Twitter, Flickr, etc). 
+Entre sus plataformas disponibles se encuentra:
+\begin{center}
+    \begin{itemize}
+        \item Sistema Operativo Android.
+        \item Sistema Operativo IOs.
+        \item Escritorio
+    \end{itemize}
+\end{center}
+
+\end{frame}
+
+\begin{frame}[t,fragile]{Equipo de la Empresa}
+
+
+\textbf{Equipo de la Empresa}
+\bigskip
+
+\begin{itemize}
+    \item \textbf{Kevin Systrom (CEO, co-founder)} :  Consejero delegado o Director ejecutivo de Instagram, siendo el responsable de la visión y estrategia de la compañoa acorde a las operaciones diaria de la misma.
+    \item \textbf{Mike Krieger (CTO, co-founder)} : Responsable técnico del desarrollo como la cabeza de ingeniería en Instagram, encargado de la construcción y aporte creativo del producto.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[t,fragile]{Desarrolladores Actuales}
+\bigskip
+\textbf{Desarrolladores}
+\bigskip
+
+\begin{wrapfigure}{r}{0.3\textwidth} 
+\vspace{1pt}
+  \begin{center}
+    \includegraphics[width=0.4\textwidth]{fbig.png}
+    \label{fig:databaseUserTable}
+  \end{center}
+  \vspace{2pt}
+\end{wrapfigure}
+
+Actualmente los desarrolladores designados a la empresa son Facebook,  dando paso a funcionalidades similares, como lo son direct (inbox) y etiquetados de usuarios en las fotos compartidas (entre las destacadas). De ésta manera se logra la conectividad interna entre ésta (IG) y el resto de aplicaciones.
+
+\end{frame}
+
+
+\begin{frame}[t,fragile]{Licencias y Softwares Asociados}
+Los software y licencias asociadas a la aplicación son los siguientes:
+AFNetworking, Appirater, Boost, CocoaLumberjack, Cocoawithlove, Flick-OAuth-iOS
+    ,Google Breakpad entre muchos otros
+\bigskip
+
+
+DE los cuales se hace una subdivisión por:
+
+\begin{itemize}
+    \item Creación de Servicios (Android y iOS)
+    \item Conexión a Servidores (Android y iOS)
+    \item Aplicaciones Propias de dispositivos (Android y iOS)
+\end{itemize}
+
+
+
+\end{frame}
+
+
+\begin{frame}[t,fragile]{Propuesta de Problemas}
+Además de las herramientas utilizadas se consideran realizar las siguientes pruebas:
+
+\begin{itemize}
+    \item Validar la Seguridad de la Aplicación en Base a sus Herramientas/Software.
+    \item Analizar el React Native de Instagram para Andriod y iOS.
+    \item Realizar Pruebas Asociadas a la conexión Servidor Aplicación. haciendo uso de:
+    \begin{itemize}
+        \item Man-in-the-middle.
+        \item DDoS.
+    \end{itemize}
+    \item Descompilar la Aplicación (si es posible).
+    \item  Analizar ataque por medio de Restauración de Contraseña haciendo uso de Proxy Web. (ataque 2016).
+    \item Posible Descompilación del Código.
+    
+    
+\end{itemize}
+
+
+
+\end{frame}
+
+

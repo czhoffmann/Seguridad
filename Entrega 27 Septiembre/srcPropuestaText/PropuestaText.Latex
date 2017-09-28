@@ -1,0 +1,211 @@
+%%% Template originaly created by Karol Kozio? (mail@karol-koziol.net) and modified for ShareLaTeX use
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\renewcommand\familydefault{\sfdefault}
+\usepackage{tgheros}
+\usepackage[defaultmono]{droidmono}
+
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{tikz}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=20mm,bottom=20mm}
+
+
+\linespread{1.3}
+
+\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+
+% custom theorems if needed
+\newtheoremstyle{mytheor}
+    {1ex}{1ex}{\normalfont}{0pt}{\scshape}{.}{1ex}
+    {{\thmname{#1 }}{\thmnumber{#2}}{\thmnote{ (#3)}}}
+
+\theoremstyle{mytheor}
+\newtheorem{defi}{Definition}
+
+% my own titles
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{center}
+\vspace{2ex}
+{\huge \textsc{\@title}}
+\vspace{1ex}
+\\
+\linia\\
+\@author \hfill \@date
+\vspace{4ex}
+\end{center}
+}
+\makeatother
+%%%
+
+% custom footers and headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{Entrega \textnumero{}  1 - Proyecto Seguridad Informática}
+\cfoot{}
+\rfoot{Página \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%
+
+% code listing settings
+\usepackage{listings}
+\lstset{
+    language=Python,
+    basicstyle=\footnotesize,
+    frame=.2,
+  xleftmargin=.2\textwidth, xrightmargin=.2\textwidth,
+    basicstyle=\ttfamily\small,
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=6,
+    prebreak=\raisebox{1ex}[1ex][1ex]{\ensuremath{\hookleftarrow}},
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+
+%%%----------%%%----------%%%----------%%%----------%%%
+
+\begin{document}
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	
+	\raggedleft % Right align the title page
+	
+	\rule{1pt}{\textheight} % Vertical line
+	\hspace{0.05\textwidth} % Whitespace between the vertical line and title page text
+	\parbox[b]{0.75\textwidth}{ % Paragraph box for holding the title page text, adjust the width to move the title page left or right on the page
+	 \begin{tabularx}{\linewidth}{}
+    \makecell{\includegraphics[height=2cm]{logo}}
+     \end{tabularx}
+     \bigskip
+     \vfill
+		{\Huge\bfseries Entrega \textnumero{} 1 Proyecto\\[0.5\baselineskip] Seguridad ~ Informática}\\[2\baselineskip] % Title
+		{\large\textsc{Definición de Aplicación a Auditar}}\\
+		{\large\textsc{con Listado de Entregables }}\\[1\baselineskip] % Subtitle or further description
+		{\normalsize\textit{Camilo Zepeda Hoffmann}} % Author name, lower case for consistent small caps
+		
+		\vspace{0.5\textheight} % Whitespace between the title block and the publisher
+		
+		{\noindent Profesor~ Maximiliano~Vega\plogo}\\[\baselineskip] % Publisher and logo
+		{\normalsize\textit{27 de Septiembre 2017}}
+	}
+
+\end{titlepage}
+
+
+\section{Resumen}
+La realización de auditorías tanto de sistemas como aplicaciones es una conducta regular en áreas informáticas o de desarrollo, de las cuales se desprenden secciones completamente dedicadas al tema, incluso haciendo uso de recompensas para individuos que encuentren e informen fallas en los sistemas pertinente. Entonces el conocimiento de los posibles errores o bien aperturas dentro del sistema dan al ente (empresa, desarrollador o benefactor) la oportunidad de mitigar dichos problemas, generando medidas apropiadas y actualizaciones que en el mejor de los casos eliminen la falla o ayuden a la detección de las mismas, efectuando así,  una mayor seguridad y encapsulamiento de la aplicación. Es por ésta razón que se solicita a los alumnos del curso de Seguridad Informática la búsqueda de una aplicación móvil popular que se encuentre dentro de las tiendas, disponible para sistema operativos iOs y Android. De tal manera que se tenga una comprensión de las licencias y software involucrados en la aplicación, generando así, planes de acción frente a las posibles fallas y pruebas asociadas que rectifiquen un desempeño óptimo.
+
+\section{Propuesta}
+Frente a la problemática descrita se escoge como aplicación popular \textbf{Instagram}, la que es descrita como una Red Social desarrollada por Kevin Systrom y Mike Krieger el año 2010 que permite compartir imágenes y vídeos, aplicando efectos fotográficos del tipo : filtros, marcos, retro, vintage, entre otros, los cuales pueden ser vistos tanto en la aplicación como en otros entornos (Facebook, Twitter, Flickr, etc). Entre los sistemas compatibles a la aplicación se destaca Android y iOs, destacando por su popularidad y uso.
+
+Actualmente los desarrolladores designados a la empresa son Facebook,  dando paso a funcionalidades similares, como lo son direct (inbox) y etiquetados de usuarios en las fotos compartidas (entre las destacadas). Ahora bien entre las licencias asociadas a la empresa se describe y nombra el siguiente listado:
+
+\begin{enumerate}
+    \item \textbf{AFNetworking}: framework utilizado para enviar y recibir datos de un servidor desde una aplicación iOS, permitiendo la comunicación entre dispositivos del mismo sistema.
+    \item \textbf{Apache Thrift}: herramienta que permite la creación de servicios web, generando respuestas acorde a los valores indicados o métodos pertinentes.
+    \item \textbf{Appirater}: es una clase que puede ser implementada en cualquier app de iphone o Android, que ayuda en recordar a los usuarios a revisar la aplicación en la Tienda según corresponda el dispositivo. 
+    \item \textbf{Apple Reachability}: funcion de iOS que da acceso a los usuarios al resto de las aplicaciones haciendo uso de sólo una mano o doble click sobre el Home, aplicado para dispositivos Iphone 6 y Iphone 6 plus a causa del tamaño de sus pantallas. 
+    \item \textbf{Boost}: licencia de software libre del tipo BBSD y MIT que hace uso de bibliotecas boost, lo que implica un desarrollo de código abierto escrito en C++. 
+    \item \textbf{CocoaLumberjack}: propiedad de biblioteca Cocoa utilizada para entornos de iOS particularmente Objective-C, swift que provee un formato y manejo ambientado al a un ambiente especifico de desarrollo. 
+    \item \textbf{Cocoawithlove-Base64}:  utilizado en plataformas Unix haciendo uso de bibliotecas criptograficas (Biblioteca OpenSSL) e integrado con tipos de datos usados en Objetive-C (como NSdata y NSString) con disponibilidad para Iphone. Realizando codificación y decodificación en base64 con OpenSSl.
+    \item \textbf{Curl}: software que provee bibliotecas y herramientas por líneas de comando para la transferencia d información haciendo uso diversos protocolos.
+   
+\end{enumerate}
+
+Si bien se describen algunos de los software utilizados por la aplicación existe un número superior de las mismas, de las que se nombran : Google Breakpad, Google-glog, ios5-cookbook, JSONKit, LXReorderableCollectionViewFlowLayout, MBProgressHUD, MyOpenALSupport, NSNotifications and Background Threads, NSString+XMLEntitites, oauthconsumer, ohhttpstubs, protobuf, QSUtilities, SocketRocket, scifihifi-iphone y UICKeyChainStore. 
+Se espera generar un informe descrito a fondo de las mismas, con tal de tener un mayor entendimiento y comprensión de las tecnologías que afectan la aplicación, complementando así, la auditoría a realizar en conjunto con los posibles ataques y pruebas a realizar.
+
+En segundo plano y en concordancia con lo descrito, se definen los siguientes puntos a probar como objetivos de la auditoría para la aplicación Instagram.
+
+\begin{itemize}
+    \item Validar la Seguridad de la Aplicación en Base a sus Herramientas/Software.
+    \item Analizar el React Native de Instagram para Android y iOS.
+    \item Realizar Pruebas Asociadas a la conexión Servidor Aplicación. haciendo uso de:
+    \begin{itemize}
+        \item Man-in-the-middle.
+        \item DDoS.
+    \end{itemize}
+    \item Descompilar la Aplicación (si es posible).
+    \item  Analizar ataque por medio de Restauración de Contraseña haciendo uso de Proxy Web. (ataque 2016).
+    \item Posible Des compilación del Código.
+    
+    
+\end{itemize}
+
+Posterior a los objetivos descritos se espera que en futuras entregas se complemente en forma más exacta cada objetivo, y relacionado a lo aprendido en el curso de Seguridad Informática de la mano con una investigación independiente de manera exhaustiva y coherente.
+
+%\section{Definición de Entregables}
+%A continuación se proponen una serie de puntos correspondientes a los futuros entregables del proyecto de Seguridad Informática:
+%\begin{itemize}
+%\item \textbf{11 Octubre}: Análisis Completo y Descriptivo de las Licencias Asociadas al sistema, y considerar escritos de Pruebas Asociadas además de la Validación de Seguridad en concordancia con sus licencias.
+%\item \textbf{25 Octubre}: Revalidar las Pruebas y 
+%\item \textbf{2 Noviembre}
+%\item \textbf{15 Noviembre}
+%\end{itemize}
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+\begin{thebibliography}{1}
+\bibitem{AFNET}
+"AFNetworking: un gran framework de comunicaciones para iPhone/iPad", Blog de Miguel Gutiérrez, 2017. [Online]. Available: \url{https://miguelgutierrezmoreno.wordpress.com/2012/11/26/afnetworking-un-extraordinario-framework-para-iphoneipad/}. [Accessed: 27- Sep- 2017]
+"Guía de referencia de Nmap (Página de manual)", Nmap.org, 2017. [Online]. Available: \url{https://nmap.org/man/es/index.html}. [Accessed: 24- Aug- 2017].
+
+
+\bibitem{NmapEst}
+"Peticiones a un servidor desde iOS con AFNetworking", AxiaCore, 2017. [Online]. Available: \url{https://axiacore.com/blog/2012/08/peticiones-a-un-servidor-desde-ios-con-afnetworking/}. [Accessed: 27- Sep- 2017]
+
+\bibitem{as}
+2017. [Online]. Available: \url{http://www.elconspirador.com/2015/01/20/que-es-apache-thrift-server/}. [Accessed: 27- Sep- 2017]
+
+\bibitem{appirater}
+https://www.buzztouch.com/forum/thread.php?tid=B60C6EE41CD7D289048B0F4
+
+\bibitem{appirater2}
+https://github.com/arashpayan/appirater
+
+\bibitem{reachability}
+https://iphoneros.com/44273/asi-es-el-modo-reachability-para-poder-utilizar-el-iphone-6-plus-con-una-sola-mano-video
+
+\bibitem{curl}
+https://curl.haxx.se/docs/history.html
+
+\end{thebibliography}
+
+\newpage
+
+
+
+\end{document}
